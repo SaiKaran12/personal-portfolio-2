@@ -1,0 +1,1317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playwrite+AU+SA:wght@100..400&display=swap');
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'poppins', sans-serif;
+}
+.navicon{
+    font-size: 30px;
+    font-display: swap;
+}
+.dropmenu li{
+    color: orange;
+}
+.dropmenu li a:hover{
+    color: orange;
+}
+  
+.main{
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    background-image: url(Assets/mainbg.jpg);
+    background-size:100vw;
+    background-repeat: no-repeat;
+    box-shadow: 0px 10px 15px #aaaaaa;
+}
+.main img{
+    width: 100%;
+    height: auto;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: end;
+    position: fixed;
+    box-shadow: 0 10px 10px #444444;
+    animation:navbar 1s ease-out;
+    z-index: 1000;
+}
+@keyframes navbar{
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: yellowgreen;
+}
+
+.bio h1{
+    color: white;
+}
+.bio h2{
+    color: greenyellow;
+}
+.bio p{
+    color: #ccc;
+    text-align: justify;
+}
+.projectbutton,.cvbutton{
+    cursor:pointer;
+}
+.project1 img{
+    width: 100%;
+    height: auto;
+}
+.project1 h2{
+    font-size: 20px;
+}
+.project1 p{
+    font-size: 13px;
+}
+.project1 h4 span{
+    color: #555;
+}
+.viewproject{
+    width: 150px;
+    height: 30px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.project1 a{
+    text-decoration: none;
+}
+
+.projectsec{
+    width: 100%;
+}
+.project1 img{
+    width: 100%;
+    height: auto;
+}
+.project1 h1{
+    font-size: 20px;
+}
+.project1 p{
+    font-size: 15px;
+    width: 90%;
+    text-align: justify;
+}
+.project1 h3{
+    font-size: 15px;
+    width: 90%;
+}
+.project1 button{
+    background-color: greenyellow;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 5px 5px;
+}
+.aboutsec{
+    width: 100%;
+}
+.contactsec{
+    width: 100%;
+}
+
+.touch form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.touch button:hover{
+    background-color: green;
+}
+
+.social1link a:hover{
+    color: white;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: #aaaaaa;
+    font-size: 10px;
+    width: 90%;
+}
+@media only screen and (min-width:900px){
+    .main{
+        height: 750px;
+    }
+    nav{
+        height: 50px;
+    }
+    nav ul{
+        gap: 3rem;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    .toggle{
+        display: none;
+    }
+    .dropmenu{
+        display: none;
+    }
+    .bio{
+        width: 55%;
+        margin-left: 5%;
+        height: calc(100% - 150px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .bio h1{
+        font-size: 60px;
+    }
+    .bio h2{
+        font-size: 40px;
+    }
+    .bio p{
+        font-size: 20px;
+        width: 80%;
+    }
+    .buttons{
+        height: 40px;
+        width: 360px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cvbutton{
+        height: 100%;
+        width: 130px;
+        border-radius: 20px 20px;
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        font-size: 16px;
+    }
+    .projectbutton{
+        height: 100%;
+        width: 130px;
+        border-radius: 20px 20px;
+        border: 1px solid yellowgreen;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+    }
+    .projectsec{
+        height: 650px;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    .projecthead{
+        width: 100%;
+        height: 80px;
+        border-bottom: 3px solid white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .projecthead h1{
+        width: 450px;
+        height: 60px;
+        color: greenyellow;
+        font-size: 50px;
+        border: 3px solid white;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .projectcontent{
+        width: 100%;
+        height: calc(100% - 82px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project1{
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        margin-left: 2.75%;
+        margin-right: 2.75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutsec{
+        height: 500px;
+        display: flex;
+    }
+    .aboutbio{
+        width: 60%;
+        height: 100%;
+        padding-left: 40px;
+        background-color: black;
+    }
+    .aboutbio h1{
+        font-size: 35px;
+        color: white;
+    }
+    .aboutbio p{
+        font-size: 20px;
+        width: 80%;
+        color: white;
+    }
+    .aboutphoto{
+        width: 40%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .aboutphoto img{
+        width: 80%;
+        height: auto;
+    }
+    .contactsec{
+        height: 650px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactheader{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 70px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 90%;
+        height: calc(90% - 100px);
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 10px 5px white inset;
+        border: 4px solid greenyellow;
+    }
+    .contactformbody{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo h4{
+        color: red;
+    }
+    .contactinfo span{
+        color: white;
+    }
+    .contactinfo .socialmedia{
+        width: 300px;
+        height: 260px;
+    }
+    .social1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social1pic{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .social1pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .social1link{
+        width: calc(100% - 80px);
+        height: 40px;
+    }
+    .social1link a{
+        text-decoration: none;
+        font-size: 20px;
+        color: greenyellow;
+    }
+    .contactform{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%,50% 0%,100% 100%,0% 100%);
+        background-color: greenyellow;
+    }
+    .touch{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .touch input{
+        width: 100%;
+        height: 30px;
+        border: 2px solid black;
+    }
+    .touch textarea{
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border: 2px solid black;
+    }
+    .touch h1{
+        margin-top: 30px;
+        color: black;
+    }
+    .touch button{
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+    }
+    .widthalert{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:680px) and (max-width:899px){
+    .main{
+        height: 600px;
+    }
+    nav{
+        height: 40px;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .toggle{
+        display: none;
+    }
+    .dropmenu{
+        display: none;
+    }
+    .bio{
+        width: 55%;
+        margin-left: 5%;
+        height: calc(100% - 140px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio h1{
+        font-size: 40px;
+    }
+    .bio h2{
+        font-size: 25px;
+    }
+    .bio p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .buttons{
+        height: 30px;
+        width: 270px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cvbutton{
+        height: 100%;
+        width: 100px;
+        border-radius: 15px 15px;
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        font-size: 13px;
+    }
+    .projectbutton{
+        height: 100%;
+        width: 100px;
+        border-radius: 15px 15px;
+        border: 1px solid yellowgreen;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    .projectsec{
+        height: 600px;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    .projecthead{
+        width: 100%;
+        height: 80px;
+        border-bottom: 3px solid white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .projecthead h1{
+        width: 450px;
+        height: 50px;
+        color: greenyellow;
+        font-size: 40px;
+        border: 3px solid white;
+        margin-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .projectcontent{
+        width: 100%;
+        height: calc(100% - 82px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .project1{
+        width: 200px;
+        height: 350px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project1 h1{
+        font-size: 15px;
+    }
+    .project1 p{
+        font-size: 12px;
+        width: 90%;
+    }
+    .project1 button{
+        background-color: greenyellow;
+        color: white;
+        font-size: 15px;
+        margin-top: 10px;
+        width: 150px;
+        border-radius: 5px 5px;
+    }
+    .aboutsec{
+        height: 450px;
+        display: flex;
+    }
+    .aboutbio{
+        width: 60%;
+        height: 100%;
+        padding-left: 40px;
+        background-color: black;
+    }
+    .aboutbio h1{
+        font-size: 25px;
+        color: white;
+    }
+    .aboutbio p{
+        font-size: 15px;
+        width: 80%;
+        color: white;
+    }
+    .aboutphoto{
+        width: 40%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutphoto img{
+        width: 100%;
+        height: auto;
+    }
+    .contactsec{
+        height: 650px;
+        background-color: red;
+    }
+    .contactheader{
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 60px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 100%;
+        height: calc(100% - 90px);
+        background-color: black;
+    }
+    .contactsec{
+        height: 650px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactheader{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 70px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 99%;
+        height: calc(90% - 100px);
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 10px 5px white inset;
+        border: 4px solid greenyellow;
+    }
+    .contactformbody{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo h4{
+        color: red;
+    }
+    .contactinfo span{
+        color: white;
+    }
+    .contactinfo .socialmedia{
+        width: 300px;
+        height: 240px;
+    }
+    .social1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social1pic{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .social1pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .social1link{
+        width: calc(100% - 80px);
+        height: 40px;
+    }
+    .social1link a{
+        text-decoration: none;
+        font-size: 20px;
+        color: greenyellow;
+    }
+    .contactform{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%,50% 0%,100% 100%,0% 100%);
+        background-color: greenyellow;
+    }
+    .touch{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .touch input{
+        width: 100%;
+        height: 30px;
+        border: 2px solid black;
+    }
+    .touch textarea{
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border: 2px solid black;
+    }
+    .touch h1{
+        margin-top: 30px;
+        color: black;
+    }
+    .touch button{
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+    }
+    .widthalert{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:679px){
+    .main{
+        height: 400px;
+    }
+    nav{
+        height: 30px;
+    }
+    nav ul{
+        gap: 1rem;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    .toggle{
+        display: none;
+    }
+    .dropmenu{
+        display: none;
+    }
+    .bio{
+        width: 55%;
+        margin-left: 5%;
+        height: calc(100% - 100px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio h1{
+        font-size: 30px;
+    }
+    .bio h2{
+        font-size: 20px;
+    }
+    .bio p{
+        font-size: 10px;
+        width: 100%;
+    }
+    .buttons{
+        height: 25px;
+        width: 220px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cvbutton{
+        height: 100%;
+        width: 80px;
+        border-radius: 10px 10px;
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        font-size: 13px;
+    }
+    .projectbutton{
+        height: 100%;
+        width: 80px;
+        border-radius: 10px 10px;
+        border: 1px solid yellowgreen;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    .projectsec{
+        height: 1450px;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    .projecthead{
+        width: 100%;
+        height: 60px;
+        border-bottom: 3px solid white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .projecthead h1{
+        width: 350px;
+        height: 40px;
+        color: greenyellow;
+        font-size: 35px;
+        border: 3px solid white;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .projectcontent{
+        width: 100%;
+        height: calc(100% - 82px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project1{
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutsec{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutbio{
+        width: calc(100% - 40px);
+        height: 60%;
+        padding-left: 40px;
+        background-color: black;
+    }
+    .aboutbio h1{
+        font-size: 30px;
+        color: white;
+    }
+    .aboutbio p{
+        font-size: 15px;
+        width: 80%;
+        color: white;
+    }
+    .aboutphoto{
+        width: 100%;
+        height: 40%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutphoto img{
+        height: 100%;
+        width: auto;
+    }
+    .contactheader{
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 50px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 100%;
+        height: calc(100% - 70px);
+        background-color: black;
+    }
+    .contactsec{
+        height: 1150px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactheader{
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 60px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 90%;
+        height: calc(95% - 90px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 10px 5px white inset;
+        border: 4px solid greenyellow;
+    }
+    .contactformbody{
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo{
+        width: 95%;
+        height: 50%;
+        background-color: transparent;
+        box-sizing: border-box;
+        order: -1;
+    }
+    .contactinfo h4{
+        color: red;
+    }
+    .contactinfo span{
+        color: white;
+    }
+    .contactinfo .socialmedia{
+        width: 300px;
+        height: 260px;
+    }
+    .social1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social1pic{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .social1pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .social1link{
+        width: calc(100% - 80px);
+        height: 40px;
+    }
+    .social1link a{
+        text-decoration: none;
+        font-size: 20px;
+        color: greenyellow;
+    }
+    .contactform{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%,50% 0%,100% 100%,0% 100%);
+        background-color: greenyellow;
+    }
+    .touch{
+        width: 70%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .touch input{
+        width: 100%;
+        height: 30px;
+        border: 2px solid black;
+    }
+    .touch textarea{
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border: 2px solid black;
+    }
+    .touch h1{
+        margin-top: 30px;
+        color: black;
+    }
+    .touch button{
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+    }
+    .widthalert{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px){
+    nav{
+        height: 45px;
+        justify-content: end;
+    }
+    nav ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        margin-right: 20px;
+        color: white;
+    }
+    .dropmenu{
+        height: 0px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.9);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        list-style: none;
+        gap: 0.5rem;
+        font-size: 20px;
+        overflow: hidden;
+        margin-top: 52px;
+        position: fixed;
+        z-index: 10000;
+    }
+    .dropmenu li a{
+        text-decoration: none;
+        color: white;
+    }
+    .main{
+        width: 100%;
+        height: 800px;
+        background-color: black;
+        background-image: url(Assets/mainbg-mobile.jpg);
+        background-size:100vw;
+        background-repeat: no-repeat;
+        box-shadow: 0px 10px 15px #aaaaaa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bio{
+        width: 90%;
+        height: 30%;
+        margin-top: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bio h1{
+        font-size: 35px;
+    }
+    .bio h2{
+        font-size: 27px;
+    }
+    .bio p{
+        width: 90%;
+    }
+    .buttons{
+        height: 40px;
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cvbutton{
+        height: 100%;
+        width: 120px;
+        border-radius: 10px 10px;
+        background-color: yellowgreen;
+        border: none;
+        color: black;
+        font-size: 16px;
+    }
+    .projectbutton{
+        height: 100%;
+        width: 120px;
+        border-radius: 10px 10px;
+        border: 1px solid yellowgreen;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+    }
+    .projectsec{
+        height: 1450px;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    .projecthead{
+        width: 100%;
+        height: 60px;
+        border-bottom: 3px solid white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .projecthead h1{
+        width: 250px;
+        height: 40px;
+        color: greenyellow;
+        font-size: 28px;
+        border: 3px solid white;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .projectcontent{
+        width: 100%;
+        height: calc(100% - 82px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project1{
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project1 a button{
+        color: black;
+    }
+    .aboutsec{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutbio{
+        width: 100%;
+        height: 60%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutbio h1{
+        font-size: 25px;
+        color: white;
+    }
+    .aboutbio p{
+        font-size: 14px;
+        width: 80%;
+        color: white;
+        text-align: justify;
+    }
+    .aboutphoto{
+        width: 100%;
+        height: 40%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutphoto img{
+        height: 100%;
+        width: auto;
+    }
+    .contactsec{
+        height: 1100px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .contactheader{
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactheader h1{
+        font-size: 50px;
+        color: white;
+        text-shadow:0 0px 10px #aaaaaa;
+    }
+    .contactmain{
+        width: 90%;
+        height: calc(95% - 90px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 2.5%;
+        box-shadow: 0px 0px 10px 5px white inset;
+        border: 4px solid greenyellow;
+    }
+    .contactformbody{
+        width: 100%;
+        height: 45%;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+    .contactinfo{
+        width: 95%;
+        height: 55%;
+        background-color: transparent;
+        box-sizing: border-box;
+        order: -1;
+    }
+    .contactinfo h4{
+        color: red;
+    }
+    .contactinfo span{
+        color: white;
+    }
+    .contactinfo .socialmedia{
+        width: 300px;
+        height: 260px;
+    }
+    .social1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social1pic{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .social1pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .social1link{
+        width: calc(100% - 80px);
+        height: 40px;
+    }
+    .social1link a{
+        text-decoration: none;
+        font-size: 20px;
+        color: greenyellow;
+    }
+    .contactform{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%,70% 0%,100% 100%,0% 100%);
+        background-color: greenyellow;
+    }
+    .touch{
+        width: 80%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .touch input{
+        width: 100%;
+        height: 30px;
+        border: 2px solid black;
+    }
+    .touch textarea{
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border: 2px solid black;
+    }
+    .touch h1{
+        margin-top: 30px;
+        color: black;
+    }
+    .touch button{
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+        color: white;
+        background-color: black;
+    }
+    .widthalert{
+        display: none;
+    }
+    
+}
+
+
+@media only screen and (max-width:319px){
+    .main, .projectsec, .aboutsec, .contactsec, footer{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .widthalert h2{
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+    
+}
+
+
+
